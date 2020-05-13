@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>L.A.R.S. Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .imgframe {
+            background: #1C277E;
+            padding: 5px;
+            border: 1px solid #1C277E;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+            .w3-half img:hover {
+                opacity: 1
+            }
+
+        .w3-bar-item {
+            font-size: 25px;
+        }
+
+        .w3-modal-content {
+            width: 1500px
+        }
+
+        .socialContact img {
+            width: 100px;
+            height: 100px
+        }
+
+        .screenshots img {
+            border: solid 1px black
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="">
+                <img style="width:232px;height:232px" src="lars.png" class="imgframe">
+            </h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Full Demo</a>
+            <a href="#documentation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Documentation</a>
+            <a href="#screenshots" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">GUI Screenshots (to come)</a>
+            <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+            <a href="/code/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><span style="color: #1C277E">Code Samples (to come)</span></a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+        <span>L.A.R.S.</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Full Demo -->
+        <div class="w3-container" style="margin-top:50px" id="demo">
+            <h1 class="w3-jumbo"><b>L . A . R . S .</b></h1>
+            <h1 class="w3-xxlarge w3-text-blue"><b>Luke's Automation and Robotisation System</b></h1>
+            <hr style="width:50px;border:5px solid blue" class="w3-round">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+        <!-- Documentation -->
+        <div class="w3-container" id="documentation" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Documentation</b></h1>
+            <hr style="width:50px;border:5px solid blue" class="w3-round">
+            <style>
+                fieldset {
+                    font-family: sans-serif;
+                    border: 5px solid #1F497D;
+                    background: #ddd;
+                    border-radius: 5px;
+                    padding: 15px;
+                }
+
+                    fieldset legend {
+                        background: #4780c6;
+                        color: #fff;
+                        padding: 5px 10px;
+                        font-size: 25px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 0 3px #1F497D;
+                        margin-left: 20px;
+                    }
+
+                    fieldset img {
+                        vertical-align: middle;
+                        float: left;
+                    }
+
+                    fieldset ul {
+                        margin-left: 90px;
+                        margin-top: 0;
+                    }
+
+                        fieldset ul li {
+                            margin-bottom: 9px;
+                        }
+
+                .rpa {
+                    border: 5px solid #9b6d2d;
+                }
+
+                    .rpa legend {
+                        box-shadow: 0 0 0 3px #9b6d2d;
+                        background: #c18d43;
+                    }
+
+                .cloud {
+                    border: 5px solid #999694;
+                }
+
+                    .cloud legend {
+                        box-shadow: 0 0 0 3px #999694;
+                        background: #b5b1af;
+                    }
+
+                .ds {
+                    border: 5px solid #af7067;
+                }
+
+                    .ds legend {
+                        box-shadow: 0 0 0 3px #af7067;
+                        background: #875048;
+                    }
+
+                .iot {
+                    border: 5px solid #468451;
+                }
+
+                    .iot legend {
+                        box-shadow: 0 0 0 3px #468451;
+                        background: #6eb77b;
+                    }
+
+                .lars {
+                    border: 5px solid #6d7787;
+                }
+
+                    .lars legend {
+                        box-shadow: 0 0 0 3px #919baa;
+                        background: #6d7787;
+                    }
+
+                .miniLegend, .miniLegendTwo {
+                    font-size: 15px;
+                    width: 65px;
+                }
+
+                    .miniLegend:after {
+                        font-weight: bold;
+                        content: 'Usage';
+                    }
+            </style>
+            <fieldset class="lars" style="min-height:100px;">
+                <legend><b> What is L.A.R.S.? </b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+                <ul>
+                    <li>L.A.R.S. is the a homemade application and server created to power home automation</li>
+                    <li>Amazon's Alexa is an intermediary to speak to L.A.R.S., and requires developers to choose an arbitrary name to invoke applications. I chose L.A.R.S., named after Lars Bak</li>
+                    <li>Application Logic: Python, Java, PHP, BASH, Ruby, C#</li>
+                    <li>Web Interface: HTML5, JavaScript, PHP</li>
+                </ul>
+
+                <legend class="miniLegend"><b>  </b> </legend>
+                <br>
+
+                <ul>
+                    <li><b>Voice</b>: Speak out loud anywhere in the house "<b>Alexa, tell L.A.R.S. to</b> ....."</li>
+                    <li><b>GUI</b>: Tapping the touchscreen panels in our kitchen, living room, dining room or conservatory.</li>
+                    <li><b>Chatbot</b>: An text-messaging interface that allows you to interact with L.A.R.S. as if you had spoken to him with audible voice commands.</li>
+                    <li>Web Service: <b>JSON REST</b></li>
+                    <li>CLI: '<b>L.A.R.S.</b>' executable command-line scriptable interface</li>
+                </ul>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset style="min-height:100px;">
+                <legend><b> Blockchain </b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+                <ul>
+                    <li>A localized etheruem blockchain runs on the main linux server</li>
+                    <li>The interactive <b>Task List</b> and associated rewards are tracked as a homewide cryptocurrency on the ethereum blockchain mentioned</li>
+                </ul>
+
+                <br><br><br><br>
+                <legend class="miniLegend"><b> </b> </legend>
+                <br>
+
+                <ul>
+                    <li><b>Chore Chart</b> - say out loud "Alexa, tell L.A.R.S. to remove one point from Luke", or</li>
+                    <li>"Alexa, ask L.A.R.S. to report on the status of the parent's points", or</li>
+                    <li>Go to one of the touchpanels and tap the "Rewards" dashboard.</li>
+                    <li>Each point is a cryptocurrency token and can be exchanged for 30 minutes of electronic entertainment (TV, Video Games).</li>
+                </ul>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset class="rpa" style="min-height:100px;">
+                <legend><b> Robotic Process Automation </b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+                <ul>
+                    <li>L.A.R.S. is programmed as a <b>virtual fitness trainer</b> with daily custom routines that do not repeat</li>
+                    <li><b>Family Fact Study</b> is automated by L.A.R.S. (loads the 'next chapter' in study, reads it to aloud, and scrolls synchronized text on screens)</li>
+                </ul>
+
+                <br><br><br><br>
+                <legend class="miniLegend"><b> </b> </legend>
+                <br>
+
+                <ul>
+                    <li><b>Virtual Fitness Trainer</b> - Go in to the conservatory and say out loud "Alexa, tell L.A.R.S. to start a workout", or</li>
+                    <li>Use the touchpanel in the conservatory to select a routine.</li>
+                    <li><b>Family Fact Study</b> - Ask Alexa to tell L.A.R.S. you'd like to start a study session, or use the touchpanel "Learning" dashboard.</li>
+                </ul>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset class="ds" style="min-height:100px;">
+                <legend><b> Data Science / Artificial Intelligence</b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+                <ul>
+                    <li>L.A.R.S. uses a deep learning model built with <b>TensorFlow</b> to determine if all rooms are messy or clean. Then it only allows the family to play games or watch TV if they're clean.</li>
+                    <li><b>MachineBox.io</b> and <b>Microsoft Azure</b> (Cognitive Services) are used for automatic facial recognition and cognitive captioning of photos and videos</li>
+                    <li>Home energy usage is monitored in real-time by <b>Sense Energy Monitor</b> -- which uses machine learning to detect physical devices based on their power signatures</li>
+                    <li><b>Alexa Voice Recognition</b> is pervasive throughout the house via Amazon Echo Dot devices. Spoken commands are routed to the L.A.R.S. server for actioning</li>
+                    <li>The childrens' <b>educational reports are marked daily by L.A.R.S.</b>, which then awards cryptocurrency based on the grade attained</li>
+                </ul>
+
+                <br>
+                <legend class="miniLegend"><b>  </b> </legend>
+                <br>
+
+                <ul>
+                    <li><b>Facial Recognition &amp; Cognitive Captioning</b> happen automatically on all photos taken.</li>
+                    <li><b>Speech Transcription, Sentiment Analysis, Topic/Theme Identification &amp; Facial Recognition</b> are all applied to the video recordings.</li>
+                    <li><b>A.I. Room Cleanliness</b> is shown on the GUI and L.A.R.S. will decline requests to turn on devices if the rooms aren't clean.</li>
+                    <li><b>Sense Energy Monitor</b> can be viewed on the L.A.R.S. GUI. On touchpanels, tap the "Power Sense" tab.</li>
+                    <li><b>Alexa Voice Recognition</b> is prevalent throughout the house.</li>
+                    <li><b>Educational Log Marking</b>, ask how Luke's school work seems today: "Alexa, ask L.A.R.S. how school is going."</li>
+                </ul>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset class="iot" style="min-height:100px;">
+                <legend><b> Internet of Things </b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+                <ul>
+                    <li>All vehicles are fitted with <b>real-time GPS tracking</b> that is relayed to the server and can be viewed on GUIs in the house and on mobile interfaces</li>
+                    <li>Wifi-enabled <b>IoT buttons</b> are placed throughout the house to perform various tasks automatically (burglar alarm, job completion, watch specific show, toggle lights, etc) </li>
+                    <li>Connected <b>Pi Zero Motion Sensors</b> trigger actions based on location and time of day</li>
+                    <li>Pi Zero W's are mounted on all doors with <b>Accelerometers</b> to provide alerting and tracking</li>
+                    <li>PoE <b>Pi Cameras</b> are installed inside and out (controlled by L.A.R.S. which gives alerts when someone is at the front door and displays a live feed on all displays, including TVs)</li>
+                    <li>Virgin Media <b>TV-Over-Ethernet</b> is provided by TIVO (and thus can be viewed on any device in the house, and recorded on the server)</li>
+                    <li><b>Wifi-enabled lights</b> are installed throughout the house to provided color-coded visual notifications for events such as text messages, doors opening, front-door visitors, etc</li>
+                </ul>
+
+                <legend class="miniLegend"><b>  </b> </legend>
+                <br>
+
+                <ul>
+                    <li><b>Real-time Vehicle Tracking</b> - tap the 'Cars' tab on the touchpanels or request: "Alexa, ask L.A.R.S. where the cars are."</li>
+                    <li>Wifi <b>IoT buttons</b> - buttons in the living room will start favourite Netflix and TV shows, buttons on the fridge mark chores as complete, alarm buttons sound the burglar alarm and the dinner gong is located on the fridge.</li>
+                    <li>Connected <b>Motion Sensors</b> - enter the bathroom and the floor lights come on (for late-night trips).</li>
+                    <li><b>Door Pi Monitor</b> - open or close the doors and L.A.R.S. will make an audible announcement via Alexa, stating the person's name if recognised.</li>
+                    <li><b>Smart Surveillance Cameras</b> can be viewed on the 'Cameras' tab on the GUI. Tap any camera to view the live feed or ask L.A.R.S. to display them and they'll appear on the nearest display.</li>
+                    <li><b>TV-Over-Ethernet</b> - ask Alexa to "tell L.A.R.S. I want to watch Comedy Central" and the nearest TV will turn on and tune in.</li>
+                    <li><b>Wifi-enabled lights</b> - send a message to Luke and the lights will flash and Alexa will read it aloud while L.A.R.S. displays the message on his computer.</li>
+                </ul>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset class="cloud" style="min-height:100px;">
+                <legend><b> Other Workflows </b> </legend>
+                <img style="width: 100px" src="placeholder.png">
+
+                <ul>
+                    <li>When L.A.R.S. detects a parent returning from work in the evening, it sends a text to the children if they are at home to let them know someone is on their way back.</li>
+                    <li>View the "Weather" tab on the touchpanel GUI. This is what autoloads and displays in all rooms while everyone gets ready for work and school.</li>
+                    <li>Five touchpanels are currently in use: Kitchen, Living Room, Dining Room, Conservatory and Luke's Room. They all display the interactive L.A.R.S. dashboard GUI.</li>
+                    <li>Whole-house audio can be controlled on the Music tab on the L.A.R.S. GUI. Supported music includes Amazon Music, Youtube, and Radio Stations.</li>
+                    <li>After a power outage, L.A.R.S. pings every device in the house and lets me know what's offline.</li>
+                    <li>L.A.R.S. can also be contacted through an interactive <b>chatbot interface</b></li>
+                </ul>
+
+                <legend class="miniLegendTwo" style="width: 128px"><b style="">Cloud Computing</b></legend>
+                <br>
+
+                <ul>
+                    <li><b>Storage</b> - entire network is synchronized to a series of Google Drive accounts</li>
+                    <li><b>Compute</b> - additional server functionality and "offsite logic" is provided by a remote linux server</li>
+                    <li><b>Camera Phone Photos</b> are synchronized in real-time between the phone, cloud, and L.A.R.S. (immediately available in a homemade cloud photo system called <b>L.A.R.S. Image Server</b>)</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="w3-container" id="faq" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Frequently Asked Questions</b></h1>
+            <hr style="width:50px;border:5px solid blue" class="w3-round">
+            <p class="w3-text-blue"><b>[example question]</b></p>
+            <p>[example summary]</p>
+            <ul>
+                <li>
+                    [example point]
+                    <ul>
+                        <li>
+                            [example sub1point]
+                            <ul>
+                                <li>
+                                    [example sub2point]
+                                    <ul>
+                                        <li>[example sub3point]</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <!-- Break example -->
+            <br>
+        </div>
+
+        <!-- Contact -->
+        <div class="w3-container" id="contact" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
+            <hr style="width:50px;border:5px solid blue" class="w3-round">
+            <span class="socialContact">
+                <p><a href="mailto:testaddress@test.org.uk">testaddress@test.org.uk</a></p>
+                <a target="_blank" href="https://www.linkedin.com/in/testprofile"><img src="placeholder.png"></a>
+                <a target="_blank" href="https://www.facebook.com/testprofile"><img src="placeholder.png"></a>
+                <a href="mailto:testaddress@test.org.uk"><img src="placeholder.png"></a>
+            </span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+
+
+</body>
+</html>
