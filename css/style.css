@@ -96,6 +96,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .introSpace h2 {
@@ -127,6 +128,7 @@ img {
     background-image: url("../img/bgreverse.jpg");
     padding-left: 108px;
     padding-right: 108px;
+    background-size: cover;
 }
 
 .grid-container {
@@ -162,7 +164,6 @@ item2 {
     .introSpace h2 {
         margin-left: -50px;
         margin-top: 5px;
-    
     }
     .mainImg {
         margin-top: -5vh;
