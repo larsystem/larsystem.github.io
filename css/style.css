@@ -27,6 +27,14 @@ img {
     margin: 50px;
 }
 
+footer a:link {color: #2e5fc9}
+
+footer a:visited {color:#2e5fc9;}
+
+footer a:hover {color: red;}
+
+footer a:active {color: red}
+
 /** decorations */
 
 .spacer {
@@ -90,12 +98,6 @@ img {
 .toSummary {
     top: 92vh;
 }
-
-/*
-.toSummary {
-    bottom: -0vh;
-}
-*/
 
 /** main page only */
 
@@ -165,7 +167,11 @@ img {
     background-size: cover;
 }
 
-
+.contentSpace {
+    height: 92vh;
+    background-image: url("../img/bgreverse.jpg");
+    background-size: cover;
+}
 
 .container p {
     font-size: 28px;
@@ -214,6 +220,14 @@ img {
     border: 2px solid black;
 }
 
+.col-lg-12-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 60px;
+}
+
 .col-lg-12 {
     position: relative;
     min-height: 1px;
@@ -238,6 +252,13 @@ img {
 }
 
 .col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-4-2 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -284,6 +305,31 @@ img {
     }
 }
 
+
+
+@media (min-width: 992px) {
+    .col-md-4-2 {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-12-2 {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .col-lg-12-2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
 
     .landing {
@@ -296,4 +342,21 @@ img {
     .mainImg {
         margin-top: -5vh;
     }
+}
+
+footer {
+    text-align: center;
+
+}
+
+hr.small {
+    max-width: 100px;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.list-unstyled li {
+    margin-bottom: 2px;
 }
