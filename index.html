@@ -10,10 +10,16 @@
     </head>
     <body>
 
-        <a href="#summary" class="btn toSummary" style="text-decoration: none;">
+
+        <!--* floating point -->
+        <a class="hiddenDot" style="bottom: -1px;" id="mainPage"></a>
+
+        <!--* buttons -->
+        <a href="#mainPage" class="btn toSummary" style="text-decoration: none;">
             <h1 style="margin-left: auto; margin-right: auto; letter-spacing: 1px; font-family: 'Nunito'; flex-shrink: 1;">next</h1>
         </a>
 
+        <!--* navbar -->
         <nav id="main">
             <ul class="nav-links">
                 <li><a href="#main">About</a></li>
@@ -22,6 +28,7 @@
             </ul>
         </nav>
 
+        <!--* title page -->
         <section id="intro" class="introSpace">
             <div class="landing">
                 <img class="mainImg" src="../img/circles.svg" alt="dots">
@@ -33,31 +40,26 @@
             <h2 style="font-family: Oxygen; font-weight: 400;">Projects: Past and Present</h2>
         </section>
 
-
+        <!--* seperator -->
         <section id="border1" class="borderOne">
             <h2>A Summary of Me</h2>
         </section>
 
+        <!--* content -->
         <section id="summary" class="summarySpace">
             <div class="container">
-                <div class="spacer"></div>
-                <!--* into for grid -->
+                <div class="spacer-half"></div>
+                <!--* intro for grid -->
                 <div>
-                    <p>Sometimes, I like to do stuff and occasionally things. Here are some examples of stuff I have done:</p>
-                    <p>test</p>
+                    <p>I am Luke Waddington: a dude that likes programming, drums, and design.</p>
+                    <p>This site is mainly practice for css, although partially a display of things I would like to share. Here are some examples of stuff that I've done:</p>
                 </div>
                 <div class="spacer-quarter"></div>
                 <!--* grid -->
                 <div class="col-lg-12 articles">
                     <div class="row">
                         <div class="col-md-4">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                                <img class="img-portfolio img-responsive" src="../img/bg.jpg">
-                            </a>
-                            <p class="text-center">label</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <a target="_blank" href="../pages/GCSEgrades.html">
                                 <img class="img-portfolio img-responsive" src="../img/bg.jpg">
                             </a>
                             <p class="text-center">label</p>
@@ -82,15 +84,13 @@
                             </a>
                             <p class="text-center">label</p>
                         </div>
-                        <div class="col-md-4">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                                <img class="img-portfolio img-responsive" src="../img/bg.jpg">
-                            </a>
-                            <p class="text-center">label</p>
-                        </div>
                     </div>
                 </div>
-                <div class="spacer"></div>
+                <div class="spacer-quarter"></div>
+                <!--* finishing message -->
+                <div>
+                    <p>Sometimes, I like to do stuff and occasionally things. Here are some examples of stuff I have done:</p>
+                </div>
             </div>
         </section>
 

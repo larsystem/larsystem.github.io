@@ -41,6 +41,13 @@ img {
     height: 27px;
 }
 
+.hiddenDot {
+    visibility: hidden;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+}
+
 .borderOne {
     height: 8vh;
     border: 10px solid #5269aa;
@@ -197,16 +204,6 @@ img {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
 .articles img {
     border: 2px solid black;
 }
@@ -214,8 +211,8 @@ img {
 .col-lg-12 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 200px;
+    padding-left: 200px;
     padding-bottom: 60px;
 }
 
@@ -263,7 +260,7 @@ img {
 @media (min-width: 992px) {
     .col-md-4 {
         float: left;
-        width: 33.33333333%;
+        width: 50%;
     }
 }
 
@@ -271,6 +268,13 @@ img {
     .col-lg-12 {
         float: left;
         width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .col-lg-12 {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
