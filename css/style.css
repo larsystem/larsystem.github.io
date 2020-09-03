@@ -18,14 +18,55 @@ body {
     font-family: sans-serif;
 }
 
-.btn2Summary {
+nav {
+    height: 8vh;
+    background: #224196;
+}
+
+img {
+    margin: 50px;
+}
+
+/** decorations */
+
+.spacer {
+    height: 108px;
+}
+
+.spacer-half {
+    height: 54px;
+}
+
+.spacer-quarter {
+    height: 27px;
+}
+
+.borderOne {
+    height: 8vh;
+    border: 10px solid #5269aa;
+    background-color: #224196a0;
+    display: flex;
+}
+
+.borderOne h2 {
+    font-family: Oxygen; 
+    font-weight: 400;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #824699;
+    font-size: 3vh;
+}
+
+/** buttons */
+
+.btn {
     display: flex;
     align-items: center;
     height: 8vh;
     width: 50vw;
     position: absolute;
     z-index: 1;
-    bottom: 0;
     left: 25vw;
     background-color: #3f60b9;
     overflow-x: hidden;
@@ -37,16 +78,13 @@ body {
     overflow: hidden;
 }
   
-.btn2Summary:hover {opacity: 1}
+.btn:hover {opacity: 1}
 
-nav {
-    height: 8vh;
-    background: #224196;
+.toSummary {
+    bottom: -0vh;
 }
 
-img {
-    margin: 50px;
-}
+/** main page only */
 
 .nameStack {
     margin-top: -25px;
@@ -106,61 +144,141 @@ img {
     margin-top: -85px;
 }
 
-.borderOne {
-    height: 8vh;
-    border: 10px solid #5269aa;
-    background-color: #224196a0;
-    display: flex;
-}
-
-.borderOne h2 {
-    font-family: Oxygen; 
-    font-weight: 400;
-    margin: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    color: #824699;
-    font-size: 3vh;
-}
+/** summary only */
 
 .summarySpace {
     height: 92vh;
     background-image: url("../img/bgreverse.jpg");
-    padding-left: 108px;
-    padding-right: 108px;
     background-size: cover;
 }
 
-.grid-container {
-    display: grid;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
+
+
+.container p {
+    font-size: 28px;
+    line-height: 140%;
+    font-family: Oxygen; font-weight: 400;
+    color: #444444;
+    padding-bottom: 10px;
 }
 
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+.articles p {
+    padding-bottom: 0px;
+    font-size: 28px;
+    line-height: 140%;
+    font-family: Oxygen; font-weight: 400;
+    color: #666666;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        padding-right: 60px;
+        padding-left: 60px;
+}
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+}
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.articles img {
+    border: 2px solid black;
+}
+
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:after,
+.row:before {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+  
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text-center {
     text-align: center;
-    padding: 20px;
-    font-size: 30px;
 }
 
-item1 {
-    grid-column: 1; 
-    grid-row: 1;
+@media (min-width: 992px) {
+    .col-md-4 {
+        float: left;
+        width: 33.33333333%;
+    }
 }
 
-item2 {
-    grid-column: 1; 
-    grid-row: 1;
+@media (min-width: 1200px) {
+    .col-lg-12 {
+        float: left;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
 
     .landing {
         flex-direction: column;
     }
-
     .introSpace h2 {
         margin-left: -50px;
         margin-top: 5px;
@@ -168,11 +286,4 @@ item2 {
     .mainImg {
         margin-top: -5vh;
     }
-
-    .grid-container {
-        width: auto;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-
 }
